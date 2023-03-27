@@ -50,5 +50,5 @@ Print1DArry(newArray);
 }
 else
 {
-Console.WriteLine("Массив пустой!!!");
+Console.WriteLine("Элементы массива превышают максмальное значения");
 }
