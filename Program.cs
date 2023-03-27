@@ -17,14 +17,14 @@ Console.Write($"[{array[i]}]\t");
 
 // Метод, который находит строки в массиве длиной не больше count
 // И возвращает новый массив из этих строк
-string[] GetNewArray(string[] arry, int count)
+string[] GetNewArray(string[] array, int count)
 {
 string[] result = new string[0];
-for (int index = 0; index < arry.Length; index++)
+for (int index = 0; index < array.Length; index++)
 {
-if (arry[index].Length <= count)
+if (array[index].Length <= count)
 {
-result = result.Concat(new string[] { arry[index] }).ToArray();
+result = result.Concat(new string[] { array[index] }).ToArray();
 }
 }
 return result;
@@ -32,21 +32,21 @@ return result;
 
 // Запросить у пользователя ввод элементов массива через пробел
 Console.WriteLine("Введите элементы массива через пробел:");
-string input = Console.ReadLine();
+string input = Console.ReadLine()?? "0";
 string[] strarray = input.Split(' ');
 
 // Получить новый массив из строк, длина которых не больше 3
-string[] resultStrarry = GetNewArray(strarray, 3);
+string[] newArray = GetNewArray(strarray, 3);
 
 // Вывести исходный массив и новый массив в консоль
 Console.WriteLine("Исходный массив:");
 Print1DArry(strarray);
 Console.WriteLine();
-Console.WriteLine("Массив из строк длина которых не больше 3:");
+Console.WriteLine("Массив из строк длина которых не превышает 3:");
 
-if (resultStrarry.Length != 0)
+if (newArray.Length != 0)
 {
-Print1DArry(resultStrarry);
+Print1DArry(newArray);
 }
 else
 {
