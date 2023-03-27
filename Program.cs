@@ -2,87 +2,49 @@
 // Написать программу, которая из имеющегося массива строк формирует массив строк, меньше или равна 3 символам.
 // Первоночальный массив вводится с клавиатуры или задается на старте.выполнения алгоритма.
 
-// int ReadData(string message)
-// {
-//     Console.Write(message);
-//     return int.Parse(Console.ReadLine() ?? "0");
-// }
-// void Print1DArry(string[] array)
-// {
-//     for (int i = 0; i < array.GetLength(0); i++)
-//     {
-//         Console.Write($"[{array[i]}]\t");
-//     }
-
-// }
-
-// string[] FilterArray(string[] inputArr)
-//     {
-//         int count = 0;
-//         for (int i = 0; i < inputArr.Length; i++)
-//         {
-//             if (inputArr[i].Length <= 3)
-//             {
-//                 count++;
-//             }
-//         }
-//         string[] outArr = new string[count];
-//         int j = 0;
-//         for (int i = 0; i < inputArr.Length; i++)
-//         {
-//             if (inputArr[i].Length <= 3)
-//             {
-//                 outArr[j] = inputArr[i];
-//                 j++;
-//             }
-//         }
-//         return outArr;
-//     }
-
-
-using System;
-
-class Program
+// Метод для вывода одномерного массива строк в консоль
+void Print1DArry(string[] array)
 {
-    static void Main(string[] args)
-    {
-        // Ввод количества элементов массива
-        Console.Write("Введите количество элементов массива: ");
-        int n = int.Parse(Console.ReadLine());
+for (int i = 0; i < array.GetLength(0); i++)
+{
+Console.Write($"[{array[i]}]\t");
+}
+}
 
-        // Создание исходного массива строк
-        string[] inputArray = new string[n];
+// Метод, который находит строки в массиве длиной не больше count
+// И возвращает новый массив из этих строк
+string[] GetNewArray(string[] arry, int count)
+{
+string[] result = new string[0];
+for (int index = 0; index < arry.Length; index++)
+{
+if (arry[index].Length <= count)
+{
+result = result.Concat(new string[] { arry[index] }).ToArray();
+}
+}
+return result;
+}
 
-        // Ввод элементов массива с клавиатуры
-        Console.WriteLine("Введите элементы массива:");
-        for (int i = 0; i < n; i++)
-        {
-            inputArray[i] = Console.ReadLine();
-        }
+// Запросить у пользователя ввод элементов массива через пробел
+Console.WriteLine("Введите элементы массива через пробел:");
+string input = Console.ReadLine();
+string[] strarray = input.Split(' ');
 
-        // Создание нового массива строк
-        string[] outputArray = new string[inputArray.Length];
-        int count = 0;
+// Получить новый массив из строк, длина которых не больше 3
+string[] resultStrarry = GetNewArray(strarray, 3);
 
-        // Проход по каждой строке исходного массива
-        for (int i = 0; i < inputArray.Length; i++)
-        {
-            // Проверка длины строки
-            if (inputArray[i].Length <= 3)
-            {
-                // Добавление строки в новый массив
-                outputArray[count] = inputArray[i];
-                count++;
-            }
-        }
+// Вывести исходный массив и новый массив в консоль
+Console.WriteLine("Исходный массив:");
+Print1DArry(strarray);
+Console.WriteLine();
+Console.WriteLine("Массив из строк длина которых не больше 3:");
 
-        // Вывод нового массива строк на экран
-        Console.WriteLine("Массив строк, меньше или равных 3 символам:");
-        for (int i = 0; i < count; i++)
-        {
-            Console.WriteLine(outputArray[i]);
-        }
-
-        Console.ReadLine();
-    }
+if (resultStrarry.Length != 0)
+{
+Print1DArry(resultStrarry);
+}
+else
+{
+Console.WriteLine("Массив пустой!!!");
 }
