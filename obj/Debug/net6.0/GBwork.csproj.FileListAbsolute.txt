@@ -1,0 +1,15 @@
+C:\Users\1504l\Desktop\GeekBrains\GEEKBRAINS\GBwork\bin\Debug\net6.0\GBwork.exe
+C:\Users\1504l\Desktop\GeekBrains\GEEKBRAINS\GBwork\bin\Debug\net6.0\GBwork.deps.json
+C:\Users\1504l\Desktop\GeekBrains\GEEKBRAINS\GBwork\bin\Debug\net6.0\GBwork.runtimeconfig.json
+C:\Users\1504l\Desktop\GeekBrains\GEEKBRAINS\GBwork\bin\Debug\net6.0\GBwork.dll
+C:\Users\1504l\Desktop\GeekBrains\GEEKBRAINS\GBwork\bin\Debug\net6.0\GBwork.pdb
+C:\Users\1504l\Desktop\GeekBrains\GEEKBRAINS\GBwork\obj\Debug\net6.0\GBwork.csproj.AssemblyReference.cache
+C:\Users\1504l\Desktop\GeekBrains\GEEKBRAINS\GBwork\obj\Debug\net6.0\GBwork.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1504l\Desktop\GeekBrains\GEEKBRAINS\GBwork\obj\Debug\net6.0\GBwork.AssemblyInfoInputs.cache
+C:\Users\1504l\Desktop\GeekBrains\GEEKBRAINS\GBwork\obj\Debug\net6.0\GBwork.AssemblyInfo.cs
+C:\Users\1504l\Desktop\GeekBrains\GEEKBRAINS\GBwork\obj\Debug\net6.0\GBwork.csproj.CoreCompileInputs.cache
+C:\Users\1504l\Desktop\GeekBrains\GEEKBRAINS\GBwork\obj\Debug\net6.0\GBwork.dll
+C:\Users\1504l\Desktop\GeekBrains\GEEKBRAINS\GBwork\obj\Debug\net6.0\refint\GBwork.dll
+C:\Users\1504l\Desktop\GeekBrains\GEEKBRAINS\GBwork\obj\Debug\net6.0\GBwork.pdb
+C:\Users\1504l\Desktop\GeekBrains\GEEKBRAINS\GBwork\obj\Debug\net6.0\GBwork.genruntimeconfig.cache
+C:\Users\1504l\Desktop\GeekBrains\GEEKBRAINS\GBwork\obj\Debug\net6.0\ref\GBwork.dll
